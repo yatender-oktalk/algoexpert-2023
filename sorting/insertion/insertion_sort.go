@@ -14,6 +14,8 @@ func insert(a []int, j int) []int {
 		if a[j] < a[i-1] {
 			a[j], a[i-1] = a[i-1], a[j]
 			j = i - 1
+		} else {
+			break
 		}
 	}
 	return a
